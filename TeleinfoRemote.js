@@ -41,8 +41,24 @@ exports.action = function ( data , callback , config , SARAH ) {
 				data.ttsAction = data.ttsAction.replace ( /%/, exports.tarif);
 				break;
 		    case 'HC..' :
-				exports.tarif = 'Heure Creuses Heures Pleines';
-				data.ttsAction = data.ttsAction.replace ( /%/, exports.tarif);
+				exports.abo = 'Heure Creuses Heures Pleines';
+				data.ttsAction = data.ttsAction.replace ( /%/, exports.abo);
+				break;
+			case 'BASE' :
+				exports.abo = 'de base';
+				data.ttsAction = data.ttsAction.replace ( /%/, exports.abo);
+				break;
+				case 'EJP.' :
+				exports.abo = 'avec mode ejp';
+				data.ttsAction = data.ttsAction.replace ( /%/, exports.abo);
+				break;
+				case 'BBRX' :
+				exports.abo = 'en tempo';
+				data.ttsAction = data.ttsAction.replace ( /%/, exports.abo);
+				break;
+				case '----' :
+				exports.tempo = 'pas disponible pour';
+				data.ttsAction = data.ttsAction.replace ( /%/, exports.tempo);
 				break;
 			case '0' :
 					SARAH.speak ( 'Vous êtes en triphasé');

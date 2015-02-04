@@ -5,8 +5,9 @@
   <item>Sarah</item>
     
     <one-of>
-      <item>Quel est le tarif en cours
-        <tag>out.action.tag="T1_PTEC" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="Vous êtes en tarif  %";</tag>
+      <item>Quelle est le tarif en cours
+        <tag>out.action.tag="T1_PTEC" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="Vous êtes en tarif  %";
+        </tag>
       </item>
       <item>Quelle est la consommation
         <tag>out.action.tag="T1_PPAP" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="La consommation instantanée est de % v a";</tag>
@@ -23,11 +24,15 @@
       <item>Quelle est l'index en heure creuse
         <tag>out.action.tag="T1_HCHC" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="L'index heure creuse est de % whate heure";</tag>
       </item>
-      <item>Quelle est l'index de base
-        <tag>out.action.tag="T1_OPTARIF" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="votre option tarifaire est % ";</tag>
+      <item>Quelle est mon option tarifaire
+        <tag>out.action.tag="T1_OPTARIF" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="votre option tarifaire est % ";
+        </tag>
       </item>
       <item>Quelle est l'intensité maxi
         <tag>out.action.tag="T1_IMAX" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="L'intensité maxi à été de % ampères";</tag>
+      </item>
+      <item>Quelle est la couleur du tarif demain
+        <tag>out.action.tag="T1_DEMAIN" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="la couleur est % demain";</tag>
       </item>
     </one-of>
 
